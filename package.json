@@ -1,0 +1,25 @@
+{
+  "name": "server-webhook",
+  "version": "1.0.0",
+  "description": "server-webhook",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmhoang94/server-webhook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmhoang94/server-webhook/issues"
+  },
+  "homepage": "https://github.com/pmhoang94/server-webhook#readme"
+}
