@@ -16,7 +16,7 @@ var server = http.createServer(app)
 app.get('/', (req, res) => {
   res.send('Home page. Server running okay.')
 })
-
+ 
 app.get('/webhook', function(req, res) {
   if (req.query['hub.verify_token'] === VALIDATION_TOKEN) {
     res.send(req.query['hub.challenge'])
@@ -27,6 +27,7 @@ app.get('/webhook', function(req, res) {
 app.post('/webhook', function(req, res) {
   var fbChanges = req.body.entry[0].changes
   console.log(JSON.stringify(fbChanges))
+  console.log(JSON.stringify(req.body))
   res.status(200).send(fbChanges)
 })
 
